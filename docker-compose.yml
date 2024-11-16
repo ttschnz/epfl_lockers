@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  epfl_lockers:
+    build: .
+    environment:
+      scanning_interval: 5 # seconds (900s=15min)
+      locker_groups: "Centre Midi (CM 1 94.3)" # comma separated
+      max_distance: 0
+      # define pc_session_id in .env file
+    env_file: .env

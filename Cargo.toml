@@ -1,0 +1,16 @@
+[package]
+name = "epfl_lockers"
+version = "0.1.0"
+edition = "2021"
+description = "Scans for available EPFL-Locker groups via pocketcampus and writes into a ntfy channel"
+
+[dependencies]
+geo = "0.29.1"
+http = "1.1.0"
+json = "0.12.4"
+openssl = { version = "0.10.68", features = ["vendored"] }
+reqwest = { version = "0.12.9", features = ["blocking"] }
+serde = "1.0.215"
+serde_derive = "1.0.215"
+serde_json = "1.0.132"
+ureq = "2.10.1"
